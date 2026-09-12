@@ -3,1146 +3,1481 @@
 ===================================================== */
 
 const races = [
-  /* =================================================
+
+    /* =================================================
        COMPLETED RACES
     ================================================= */
 
-  {
-    round: 1,
+    {
+        round: 1,
 
-    name: "Australian Grand Prix",
+        name: "Australian Grand Prix",
 
-    shortName: "Australia",
+        shortName: "Australia",
 
-    date: "08 Mar",
+        date: "08 Mar",
 
-    location: "Albert Park Grand Prix Circuit",
+        location: "Albert Park Grand Prix Circuit",
 
-    image: "images/australia.avif",
+        image: "images/australia.avif",
 
-    status: "COMPLETED",
+        status: "COMPLETED",
 
-    podium: [
-      {
-        position: 1,
-        number: 63,
-        driver: "George Russell",
-        team: "Mercedes",
-        class: "mercedes",
-      },
+        totalLaps: 58,
 
-      {
-        position: 2,
-        number: 12,
-        driver: "Kimi Antonelli",
-        team: "Mercedes",
-        class: "mercedes",
-      },
+        podium: [
 
-      {
-        position: 3,
-        number: 16,
-        driver: "Charles Leclerc",
-        team: "Ferrari",
-        class: "ferrari",
-      },
-    ],
+            {
+                position: 1,
+                number: 63,
+                driver: "George Russell",
+                team: "Mercedes",
+                class: "mercedes"
+            },
 
-    fastestLap: {
-      driver: "Max Verstappen",
+            {
+                position: 2,
+                number: 12,
+                driver: "Kimi Antonelli",
+                team: "Mercedes",
+                class: "mercedes"
+            },
 
-      number: 3,
+            {
+                position: 3,
+                number: 16,
+                driver: "Charles Leclerc",
+                team: "Ferrari",
+                class: "ferrari"
+            }
 
-      team: "Red Bull Racing",
+        ],
 
-      lap: 43,
+        fastestLap: {
 
-      time: "1:22.091",
+            driver: "Max Verstappen",
+
+            number: 3,
+
+            team: "Red Bull Racing",
+
+            lap: 43,
+
+            time: "1:22.091"
+
+        }
+
     },
-  },
 
-  {
-    round: 2,
 
-    name: "Chinese Grand Prix",
+    {
+        round: 2,
 
-    shortName: "China",
+        name: "Chinese Grand Prix",
 
-    date: "15 Mar",
+        shortName: "China",
 
-    location: "Shanghai International Circuit",
+        date: "15 Mar",
 
-    image: "images/china.avif",
+        location: "Shanghai International Circuit",
 
-    status: "COMPLETED",
+        image: "images/china.avif",
 
-    podium: [
-      {
-        position: 1,
-        number: 12,
-        driver: "Kimi Antonelli",
-        team: "Mercedes",
-        class: "mercedes",
-      },
+        status: "COMPLETED",
 
-      {
-        position: 2,
-        number: 63,
-        driver: "George Russell",
-        team: "Mercedes",
-        class: "mercedes",
-      },
+        totalLaps: 56,
 
-      {
-        position: 3,
-        number: 44,
-        driver: "Lewis Hamilton",
-        team: "Ferrari",
-        class: "ferrari",
-      },
-    ],
+        podium: [
 
-    fastestLap: {
-      driver: "Kimi Antonelli",
+            {
+                position: 1,
+                number: 12,
+                driver: "Kimi Antonelli",
+                team: "Mercedes",
+                class: "mercedes"
+            },
 
-      number: 12,
+            {
+                position: 2,
+                number: 63,
+                driver: "George Russell",
+                team: "Mercedes",
+                class: "mercedes"
+            },
 
-      team: "Mercedes",
+            {
+                position: 3,
+                number: 44,
+                driver: "Lewis Hamilton",
+                team: "Ferrari",
+                class: "ferrari"
+            }
 
-      lap: 52,
+        ],
 
-      time: "1:35.275",
+        fastestLap: {
+
+            driver: "Kimi Antonelli",
+
+            number: 12,
+
+            team: "Mercedes",
+
+            lap: 52,
+
+            time: "1:35.275"
+
+        }
+
     },
-  },
 
-  {
-    round: 3,
 
-    name: "Japanese Grand Prix",
+    {
+        round: 3,
 
-    shortName: "Japan",
+        name: "Japanese Grand Prix",
 
-    date: "29 Mar",
+        shortName: "Japan",
 
-    location: "Suzuka International Racing Course",
+        date: "29 Mar",
 
-    image: "images/japan.avif",
+        location: "Suzuka International Racing Course",
 
-    status: "COMPLETED",
+        image: "images/japan.avif",
 
-    podium: [
-      {
-        position: 1,
-        number: 12,
-        driver: "Kimi Antonelli",
-        team: "Mercedes",
-        class: "mercedes",
-      },
+        status: "COMPLETED",
 
-      {
-        position: 2,
-        number: 81,
-        driver: "Oscar Piastri",
-        team: "McLaren",
-        class: "mclaren",
-      },
+        totalLaps: 53,
 
-      {
-        position: 3,
-        number: 16,
-        driver: "Charles Leclerc",
-        team: "Ferrari",
-        class: "ferrari",
-      },
-    ],
+        podium: [
 
-    fastestLap: {
-      driver: "Kimi Antonelli",
+            {
+                position: 1,
+                number: 12,
+                driver: "Kimi Antonelli",
+                team: "Mercedes",
+                class: "mercedes"
+            },
 
-      number: 12,
+            {
+                position: 2,
+                number: 81,
+                driver: "Oscar Piastri",
+                team: "McLaren",
+                class: "mclaren"
+            },
 
-      team: "Mercedes",
+            {
+                position: 3,
+                number: 16,
+                driver: "Charles Leclerc",
+                team: "Ferrari",
+                class: "ferrari"
+            }
 
-      lap: 49,
+        ],
 
-      time: "1:32.432",
+        fastestLap: {
+
+            driver: "Kimi Antonelli",
+
+            number: 12,
+
+            team: "Mercedes",
+
+            lap: 49,
+
+            time: "1:32.432"
+
+        }
+
     },
-  },
 
-  {
-    round: 4,
 
-    name: "Miami Grand Prix",
+    {
+        round: 4,
 
-    shortName: "Miami",
+        name: "Miami Grand Prix",
 
-    date: "03 May",
+        shortName: "Miami",
 
-    location: "Miami International Autodrome",
+        date: "03 May",
 
-    image: "images/miami.avif",
+        location: "Miami International Autodrome",
 
-    status: "COMPLETED",
+        image: "images/miami.avif",
 
-    podium: [
-      {
-        position: 1,
-        number: 12,
-        driver: "Kimi Antonelli",
-        team: "Mercedes",
-        class: "mercedes",
-      },
+        status: "COMPLETED",
 
-      {
-        position: 2,
-        number: 1,
-        driver: "Lando Norris",
-        team: "McLaren",
-        class: "mclaren",
-      },
+        totalLaps: 57,
 
-      {
-        position: 3,
-        number: 81,
-        driver: "Oscar Piastri",
-        team: "McLaren",
-        class: "mclaren",
-      },
-    ],
+        podium: [
 
-    fastestLap: {
-      driver: "Lando Norris",
+            {
+                position: 1,
+                number: 12,
+                driver: "Kimi Antonelli",
+                team: "Mercedes",
+                class: "mercedes"
+            },
 
-      number: 1,
+            {
+                position: 2,
+                number: 1,
+                driver: "Lando Norris",
+                team: "McLaren",
+                class: "mclaren"
+            },
 
-      team: "McLaren",
+            {
+                position: 3,
+                number: 81,
+                driver: "Oscar Piastri",
+                team: "McLaren",
+                class: "mclaren"
+            }
 
-      lap: 35,
+        ],
 
-      time: "1:31.869",
+        fastestLap: {
+
+            driver: "Lando Norris",
+
+            number: 1,
+
+            team: "McLaren",
+
+            lap: 35,
+
+            time: "1:31.869"
+
+        }
+
     },
-  },
 
-  {
-    round: 5,
 
-    name: "Canadian Grand Prix",
+    {
+        round: 5,
 
-    shortName: "Canada",
+        name: "Canadian Grand Prix",
 
-    date: "24 May",
+        shortName: "Canada",
 
-    location: "Circuit Gilles-Villeneuve",
+        date: "24 May",
 
-    image: "images/canada.avif",
+        location: "Circuit Gilles-Villeneuve",
 
-    status: "COMPLETED",
+        image: "images/canada.avif",
 
-    podium: [
-      {
-        position: 1,
-        number: 12,
-        driver: "Kimi Antonelli",
-        team: "Mercedes",
-        class: "mercedes",
-      },
+        status: "COMPLETED",
 
-      {
-        position: 2,
-        number: 44,
-        driver: "Lewis Hamilton",
-        team: "Ferrari",
-        class: "ferrari",
-      },
+        totalLaps: 68,
 
-      {
-        position: 3,
-        number: 3,
-        driver: "Max Verstappen",
-        team: "Red Bull Racing",
-        class: "redbull",
-      },
-    ],
+        podium: [
 
-    fastestLap: {
-      driver: "Kimi Antonelli",
+            {
+                position: 1,
+                number: 12,
+                driver: "Kimi Antonelli",
+                team: "Mercedes",
+                class: "mercedes"
+            },
 
-      number: 12,
+            {
+                position: 2,
+                number: 44,
+                driver: "Lewis Hamilton",
+                team: "Ferrari",
+                class: "ferrari"
+            },
 
-      team: "Mercedes",
+            {
+                position: 3,
+                number: 3,
+                driver: "Max Verstappen",
+                team: "Red Bull Racing",
+                class: "redbull"
+            }
 
-      lap: 68,
+        ],
 
-      time: "1:14.210",
+        fastestLap: {
+
+            driver: "Kimi Antonelli",
+
+            number: 12,
+
+            team: "Mercedes",
+
+            lap: 68,
+
+            time: "1:14.210"
+
+        }
+
     },
-  },
 
-  {
-    round: 6,
 
-    name: "Monaco Grand Prix",
+    {
+        round: 6,
 
-    shortName: "Monaco",
+        name: "Monaco Grand Prix",
 
-    date: "07 Jun",
+        shortName: "Monaco",
 
-    location: "Circuit de Monaco",
+        date: "07 Jun",
 
-    image: "images/monaco.avif",
+        location: "Circuit de Monaco",
 
-    status: "COMPLETED",
+        image: "images/monaco.avif",
 
-    podium: [
-      {
-        position: 1,
-        number: 12,
-        driver: "Kimi Antonelli",
-        team: "Mercedes",
-        class: "mercedes",
-      },
+        status: "COMPLETED",
 
-      {
-        position: 2,
-        number: 44,
-        driver: "Lewis Hamilton",
-        team: "Ferrari",
-        class: "ferrari",
-      },
+        totalLaps: 78,
 
-      {
-        position: 3,
-        number: 6,
-        driver: "Isack Hadjar",
-        team: "Red Bull Racing",
-        class: "redbull",
-      },
-    ],
+        podium: [
 
-    fastestLap: {
-      driver: "Kimi Antonelli",
+            {
+                position: 1,
+                number: 12,
+                driver: "Kimi Antonelli",
+                team: "Mercedes",
+                class: "mercedes"
+            },
 
-      number: 12,
+            {
+                position: 2,
+                number: 44,
+                driver: "Lewis Hamilton",
+                team: "Ferrari",
+                class: "ferrari"
+            },
 
-      team: "Mercedes",
+            {
+                position: 3,
+                number: 6,
+                driver: "Isack Hadjar",
+                team: "Red Bull Racing",
+                class: "redbull"
+            }
 
-      lap: 76,
+        ],
 
-      time: "1:13.481",
+        fastestLap: {
+
+            driver: "Kimi Antonelli",
+
+            number: 12,
+
+            team: "Mercedes",
+
+            lap: 76,
+
+            time: "1:13.481"
+
+        }
+
     },
-  },
 
-  {
-    round: 7,
 
-    name: "Barcelona-Catalunya Grand Prix",
+    {
+        round: 7,
 
-    shortName: "Barcelona",
+        name: "Barcelona-Catalunya Grand Prix",
 
-    date: "14 Jun",
+        shortName: "Barcelona",
 
-    location: "Circuit de Barcelona-Catalunya",
+        date: "14 Jun",
 
-    image: "images/barcelona-catalunya.avif",
+        location: "Circuit de Barcelona-Catalunya",
 
-    status: "COMPLETED",
+        image: "images/barcelona-catalunya.avif",
 
-    podium: [
-      {
-        position: 1,
-        number: 44,
-        driver: "Lewis Hamilton",
-        team: "Ferrari",
-        class: "ferrari",
-      },
+        status: "COMPLETED",
 
-      {
-        position: 2,
-        number: 63,
-        driver: "George Russell",
-        team: "Mercedes",
-        class: "mercedes",
-      },
+        totalLaps: 66,
 
-      {
-        position: 3,
-        number: 1,
-        driver: "Lando Norris",
-        team: "McLaren",
-        class: "mclaren",
-      },
-    ],
+        podium: [
 
-    fastestLap: {
-      driver: "Lewis Hamilton",
+            {
+                position: 1,
+                number: 44,
+                driver: "Lewis Hamilton",
+                team: "Ferrari",
+                class: "ferrari"
+            },
 
-      number: 44,
+            {
+                position: 2,
+                number: 63,
+                driver: "George Russell",
+                team: "Mercedes",
+                class: "mercedes"
+            },
 
-      team: "Ferrari",
+            {
+                position: 3,
+                number: 1,
+                driver: "Lando Norris",
+                team: "McLaren",
+                class: "mclaren"
+            }
 
-      lap: 44,
+        ],
 
-      time: "1:20.122",
+        fastestLap: {
+
+            driver: "Lewis Hamilton",
+
+            number: 44,
+
+            team: "Ferrari",
+
+            lap: 44,
+
+            time: "1:20.122"
+
+        }
+
     },
-  },
 
-  {
-    round: 8,
 
-    name: "Austrian Grand Prix",
+    {
+        round: 8,
 
-    shortName: "Austria",
+        name: "Austrian Grand Prix",
 
-    date: "28 Jun",
+        shortName: "Austria",
 
-    location: "Red Bull Ring",
+        date: "28 Jun",
 
-    image: "images/austria.avif",
+        location: "Red Bull Ring",
 
-    status: "COMPLETED",
+        image: "images/austria.avif",
 
-    podium: [
-      {
-        position: 1,
-        number: 63,
-        driver: "George Russell",
-        team: "Mercedes",
-        class: "mercedes",
-      },
+        status: "COMPLETED",
 
-      {
-        position: 2,
-        number: 3,
-        driver: "Max Verstappen",
-        team: "Red Bull Racing",
-        class: "redbull",
-      },
+        totalLaps: 71,
 
-      {
-        position: 3,
-        number: 12,
-        driver: "Kimi Antonelli",
-        team: "Mercedes",
-        class: "mercedes",
-      },
-    ],
+        podium: [
 
-    fastestLap: {
-      driver: "Kimi Antonelli",
+            {
+                position: 1,
+                number: 63,
+                driver: "George Russell",
+                team: "Mercedes",
+                class: "mercedes"
+            },
 
-      number: 12,
+            {
+                position: 2,
+                number: 3,
+                driver: "Max Verstappen",
+                team: "Red Bull Racing",
+                class: "redbull"
+            },
 
-      team: "Mercedes",
+            {
+                position: 3,
+                number: 12,
+                driver: "Kimi Antonelli",
+                team: "Mercedes",
+                class: "mercedes"
+            }
 
-      lap: 59,
+        ],
 
-      time: "1:10.374",
+        fastestLap: {
+
+            driver: "Kimi Antonelli",
+
+            number: 12,
+
+            team: "Mercedes",
+
+            lap: 59,
+
+            time: "1:10.374"
+
+        }
+
     },
-  },
 
-  {
-    round: 9,
 
-    name: "British Grand Prix",
+    {
+        round: 9,
 
-    shortName: "Great Britain",
+        name: "British Grand Prix",
 
-    date: "05 Jul",
+        shortName: "Great Britain",
 
-    location: "Silverstone Circuit",
+        date: "05 Jul",
 
-    image: "images/great-britain.avif",
+        location: "Silverstone Circuit",
 
-    status: "COMPLETED",
+        image: "images/great-britain.avif",
 
-    podium: [
-      {
-        position: 1,
-        number: 16,
-        driver: "Charles Leclerc",
-        team: "Ferrari",
-        class: "ferrari",
-      },
+        status: "COMPLETED",
 
-      {
-        position: 2,
-        number: 63,
-        driver: "George Russell",
-        team: "Mercedes",
-        class: "mercedes",
-      },
+        totalLaps: 52,
 
-      {
-        position: 3,
-        number: 44,
-        driver: "Lewis Hamilton",
-        team: "Ferrari",
-        class: "ferrari",
-      },
-    ],
+        podium: [
 
-    fastestLap: {
-      driver: "Kimi Antonelli",
+            {
+                position: 1,
+                number: 16,
+                driver: "Charles Leclerc",
+                team: "Ferrari",
+                class: "ferrari"
+            },
 
-      number: 12,
+            {
+                position: 2,
+                number: 63,
+                driver: "George Russell",
+                team: "Mercedes",
+                class: "mercedes"
+            },
 
-      team: "Mercedes",
+            {
+                position: 3,
+                number: 44,
+                driver: "Lewis Hamilton",
+                team: "Ferrari",
+                class: "ferrari"
+            }
 
-      lap: 37,
+        ],
 
-      time: "1:31.777",
+        fastestLap: {
+
+            driver: "Kimi Antonelli",
+
+            number: 12,
+
+            team: "Mercedes",
+
+            lap: 37,
+
+            time: "1:31.777"
+
+        }
+
     },
-  },
 
-  {
-    round: 10,
 
-    name: "Belgian Grand Prix",
+    {
+        round: 10,
 
-    shortName: "Belgium",
+        name: "Belgian Grand Prix",
 
-    date: "19 Jul",
+        shortName: "Belgium",
 
-    location: "Circuit de Spa-Francorchamps",
+        date: "19 Jul",
 
-    image: "images/belgium.avif",
+        location: "Circuit de Spa-Francorchamps",
 
-    status: "COMPLETED",
+        image: "images/belgium.avif",
 
-    podium: [
-      {
-        position: 1,
-        number: 12,
-        driver: "Kimi Antonelli",
-        team: "Mercedes",
-        class: "mercedes",
-      },
+        status: "COMPLETED",
 
-      {
-        position: 2,
-        number: 16,
-        driver: "Charles Leclerc",
-        team: "Ferrari",
-        class: "ferrari",
-      },
+        totalLaps: 44,
 
-      {
-        position: 3,
-        number: 3,
-        driver: "Max Verstappen",
-        team: "Red Bull Racing",
-        class: "redbull",
-      },
-    ],
+        podium: [
 
-    fastestLap: {
-      driver: "Lando Norris",
+            {
+                position: 1,
+                number: 12,
+                driver: "Kimi Antonelli",
+                team: "Mercedes",
+                class: "mercedes"
+            },
 
-      number: 1,
+            {
+                position: 2,
+                number: 16,
+                driver: "Charles Leclerc",
+                team: "Ferrari",
+                class: "ferrari"
+            },
 
-      team: "McLaren",
+            {
+                position: 3,
+                number: 3,
+                driver: "Max Verstappen",
+                team: "Red Bull Racing",
+                class: "redbull"
+            }
 
-      lap: 44,
+        ],
 
-      time: "1:48.890",
+        fastestLap: {
+
+            driver: "Lando Norris",
+
+            number: 1,
+
+            team: "McLaren",
+
+            lap: 44,
+
+            time: "1:48.890"
+
+        }
+
     },
-  },
 
-  {
-    round: 11,
 
-    name: "Hungarian Grand Prix",
+    {
+        round: 11,
 
-    shortName: "Hungary",
+        name: "Hungarian Grand Prix",
 
-    date: "26 Jul",
+        shortName: "Hungary",
 
-    location: "Hungaroring",
+        date: "26 Jul",
 
-    image: "images/hungary.avif",
+        location: "Hungaroring",
 
-    status: "COMPLETED",
+        image: "images/hungary.avif",
 
-    podium: [
-      {
-        position: 1,
-        number: 1,
-        driver: "Lando Norris",
-        team: "McLaren",
-        class: "mclaren",
-      },
+        status: "COMPLETED",
 
-      {
-        position: 2,
-        number: 3,
-        driver: "Max Verstappen",
-        team: "Red Bull Racing",
-        class: "redbull",
-      },
+        totalLaps: 70,
 
-      {
-        position: 3,
-        number: 12,
-        driver: "Kimi Antonelli",
-        team: "Mercedes",
-        class: "mercedes",
-      },
-    ],
+        podium: [
 
-    fastestLap: {
-      driver: "Charles Leclerc",
+            {
+                position: 1,
+                number: 1,
+                driver: "Lando Norris",
+                team: "McLaren",
+                class: "mclaren"
+            },
 
-      number: 16,
+            {
+                position: 2,
+                number: 3,
+                driver: "Max Verstappen",
+                team: "Red Bull Racing",
+                class: "redbull"
+            },
 
-      team: "Ferrari",
+            {
+                position: 3,
+                number: 12,
+                driver: "Kimi Antonelli",
+                team: "Mercedes",
+                class: "mercedes"
+            }
 
-      lap: 58,
+        ],
 
-      time: "1:22.000",
+        fastestLap: {
+
+            driver: "Charles Leclerc",
+
+            number: 16,
+
+            team: "Ferrari",
+
+            lap: 58,
+
+            time: "1:22.000"
+
+        }
+
     },
-  },
 
-  {
-    round: 12,
 
-    name: "Dutch Grand Prix",
+    {
+        round: 12,
 
-    shortName: "Netherlands",
+        name: "Dutch Grand Prix",
 
-    date: "23 Aug",
+        shortName: "Netherlands",
 
-    location: "Circuit Zandvoort",
+        date: "23 Aug",
 
-    image: "images/netherlands.avif",
+        location: "Circuit Zandvoort",
 
-    status: "COMPLETED",
+        image: "images/netherlands.avif",
 
-    podium: [
-      {
-        position: 1,
-        number: 1,
-        driver: "Lando Norris",
-        team: "McLaren",
-        class: "mclaren",
-      },
+        status: "COMPLETED",
 
-      {
-        position: 2,
-        number: 12,
-        driver: "Kimi Antonelli",
-        team: "Mercedes",
-        class: "mercedes",
-      },
+        totalLaps: 72,
 
-      {
-        position: 3,
-        number: 63,
-        driver: "George Russell",
-        team: "Mercedes",
-        class: "mercedes",
-      },
-    ],
+        podium: [
 
-    fastestLap: {
-      driver: "Charles Leclerc",
+            {
+                position: 1,
+                number: 1,
+                driver: "Lando Norris",
+                team: "McLaren",
+                class: "mclaren"
+            },
 
-      number: 16,
+            {
+                position: 2,
+                number: 12,
+                driver: "Kimi Antonelli",
+                team: "Mercedes",
+                class: "mercedes"
+            },
 
-      team: "Ferrari",
+            {
+                position: 3,
+                number: 63,
+                driver: "George Russell",
+                team: "Mercedes",
+                class: "mercedes"
+            }
 
-      lap: 60,
+        ],
 
-      time: "1:14.230",
+        fastestLap: {
+
+            driver: "Charles Leclerc",
+
+            number: 16,
+
+            team: "Ferrari",
+
+            lap: 60,
+
+            time: "1:14.230"
+
+        }
+
     },
-  },
 
-  {
-    round: 13,
 
-    name: "Italian Grand Prix",
+    {
+        round: 13,
 
-    shortName: "Italy",
+        name: "Italian Grand Prix",
 
-    date: "06 Sep",
+        shortName: "Italy",
 
-    location: "Autodromo Nazionale Monza",
+        date: "06 Sep",
 
-    image: "images/italy.avif",
+        location: "Autodromo Nazionale Monza",
 
-    status: "COMPLETED",
+        image: "images/italy.avif",
 
-    podium: [
-      {
-        position: 1,
-        number: 12,
-        driver: "Kimi Antonelli",
-        team: "Mercedes",
-        class: "mercedes",
-      },
+        status: "COMPLETED",
 
-      {
-        position: 2,
-        number: 63,
-        driver: "George Russell",
-        team: "Mercedes",
-        class: "mercedes",
-      },
+        totalLaps: 53,
 
-      {
-        position: 3,
-        number: 3,
-        driver: "Max Verstappen",
-        team: "Red Bull Racing",
-        class: "redbull",
-      },
-    ],
+        podium: [
 
-    fastestLap: {
-      driver: "Kimi Antonelli",
+            {
+                position: 1,
+                number: 12,
+                driver: "Kimi Antonelli",
+                team: "Mercedes",
+                class: "mercedes"
+            },
 
-      number: 12,
+            {
+                position: 2,
+                number: 63,
+                driver: "George Russell",
+                team: "Mercedes",
+                class: "mercedes"
+            },
 
-      team: "Mercedes",
+            {
+                position: 3,
+                number: 3,
+                driver: "Max Verstappen",
+                team: "Red Bull Racing",
+                class: "redbull"
+            }
 
-      lap: 53,
+        ],
 
-      time: "1:23.504",
+        fastestLap: {
+
+            driver: "Kimi Antonelli",
+
+            number: 12,
+
+            team: "Mercedes",
+
+            lap: 53,
+
+            time: "1:23.504"
+
+        }
+
     },
-  },
 
-  /* =================================================
+
+    /* =================================================
        FUTURE RACES
     ================================================= */
 
-  {
-    round: 14,
+    {
+        round: 14,
 
-    name: "Spanish Grand Prix",
+        name: "Spanish Grand Prix",
 
-    shortName: "Spain",
+        shortName: "Spain",
 
-    date: "11 - 13 Sep",
+        date: "11 - 13 Sep",
 
-    location: "Madring, Madrid",
+        location: "Madring, Madrid",
 
-    image: "images/spain.avif",
+        image: "images/spain.avif",
 
-    status: "UPCOMING",
+        status: "UPCOMING",
 
-    podium: null,
+        totalLaps: null,
 
-    fastestLap: null,
-  },
+        podium: null,
 
-  {
-    round: 15,
+        fastestLap: null
 
-    name: "Azerbaijan Grand Prix",
+    },
 
-    shortName: "Azerbaijan",
 
-    date: "24 - 26 Sep",
+    {
+        round: 15,
 
-    location: "Baku City Circuit",
+        name: "Azerbaijan Grand Prix",
 
-    image: "images/azerbaijan.avif",
+        shortName: "Azerbaijan",
 
-    status: "UPCOMING",
+        date: "24 - 26 Sep",
 
-    podium: null,
+        location: "Baku City Circuit",
 
-    fastestLap: null,
-  },
+        image: "images/azerbaijan.avif",
 
-  {
-    round: 16,
+        status: "UPCOMING",
 
-    name: "Bahrain Grand Prix",
+        totalLaps: null,
 
-    shortName: "Bahrain",
+        podium: null,
 
-    date: "02 - 04 Oct",
+        fastestLap: null
 
-    location: "Bahrain International Circuit",
+    },
 
-    image: "images/bahrain.avif",
 
-    status: "UPCOMING",
+    {
+        round: 16,
 
-    podium: null,
+        name: "Bahrain Grand Prix",
 
-    fastestLap: null,
-  },
+        shortName: "Bahrain",
 
-  {
-    round: 17,
+        date: "02 - 04 Oct",
 
-    name: "Singapore Grand Prix",
+        location: "Bahrain International Circuit",
 
-    shortName: "Singapore",
+        image: "images/bahrain.avif",
 
-    date: "09 - 11 Oct",
+        status: "UPCOMING",
 
-    location: "Marina Bay Street Circuit",
+        totalLaps: null,
 
-    image: "images/singapore.avif",
+        podium: null,
 
-    status: "UPCOMING",
+        fastestLap: null
 
-    podium: null,
+    },
 
-    fastestLap: null,
-  },
 
-  {
-    round: 18,
+    {
+        round: 17,
 
-    name: "United States Grand Prix",
+        name: "Singapore Grand Prix",
 
-    shortName: "United States",
+        shortName: "Singapore",
 
-    date: "23 - 25 Oct",
+        date: "09 - 11 Oct",
 
-    location: "Circuit of the Americas",
+        location: "Marina Bay Street Circuit",
 
-    image: "images/usa.avif",
+        image: "images/singapore.avif",
 
-    status: "UPCOMING",
+        status: "UPCOMING",
 
-    podium: null,
+        totalLaps: null,
 
-    fastestLap: null,
-  },
+        podium: null,
 
-  {
-    round: 19,
+        fastestLap: null
 
-    name: "Mexico City Grand Prix",
+    },
 
-    shortName: "Mexico",
 
-    date: "30 Oct - 01 Nov",
+    {
+        round: 18,
 
-    location: "Autódromo Hermanos Rodríguez",
+        name: "United States Grand Prix",
 
-    image: "images/mexico.avif",
+        shortName: "United States",
 
-    status: "UPCOMING",
+        date: "23 - 25 Oct",
 
-    podium: null,
+        location: "Circuit of the Americas",
 
-    fastestLap: null,
-  },
+        image: "images/usa.avif",
 
-  {
-    round: 20,
+        status: "UPCOMING",
 
-    name: "São Paulo Grand Prix",
+        totalLaps: null,
 
-    shortName: "Brazil",
+        podium: null,
 
-    date: "06 - 08 Nov",
+        fastestLap: null
 
-    location: "Interlagos Circuit",
+    },
 
-    image: "images/brazil.avif",
 
-    status: "UPCOMING",
+    {
+        round: 19,
 
-    podium: null,
+        name: "Mexico City Grand Prix",
 
-    fastestLap: null,
-  },
+        shortName: "Mexico",
 
-  {
-    round: 21,
+        date: "30 Oct - 01 Nov",
 
-    name: "Las Vegas Grand Prix",
+        location:
+            "Autódromo Hermanos Rodríguez",
 
-    shortName: "Las Vegas",
+        image: "images/mexico.avif",
 
-    date: "19 - 21 Nov",
+        status: "UPCOMING",
 
-    location: "Las Vegas Strip Circuit",
+        totalLaps: null,
 
-    image: "images/las-vegas.avif",
+        podium: null,
 
-    status: "UPCOMING",
+        fastestLap: null
 
-    podium: null,
+    },
 
-    fastestLap: null,
-  },
 
-  {
-    round: 22,
+    {
+        round: 20,
 
-    name: "Qatar Grand Prix",
+        name: "São Paulo Grand Prix",
 
-    shortName: "Qatar",
+        shortName: "Brazil",
 
-    date: "27 - 29 Nov",
+        date: "06 - 08 Nov",
 
-    location: "Lusail International Circuit",
+        location: "Interlagos Circuit",
 
-    image: "images/qatar.avif",
+        image: "images/brazil.avif",
 
-    status: "UPCOMING",
+        status: "UPCOMING",
 
-    podium: null,
+        totalLaps: null,
 
-    fastestLap: null,
-  },
+        podium: null,
 
-  {
-    round: 23,
+        fastestLap: null
 
-    name: "Abu Dhabi Grand Prix",
+    },
 
-    shortName: "Abu Dhabi",
 
-    date: "04 - 06 Dec",
+    {
+        round: 21,
 
-    location: "Yas Marina Circuit",
+        name: "Las Vegas Grand Prix",
 
-    image: "images/abu-dhabi.avif",
+        shortName: "Las Vegas",
 
-    status: "UPCOMING",
+        date: "19 - 21 Nov",
 
-    podium: null,
+        location: "Las Vegas Strip Circuit",
 
-    fastestLap: null,
-  },
+        image: "images/las-vegas.avif",
+
+        status: "UPCOMING",
+
+        totalLaps: null,
+
+        podium: null,
+
+        fastestLap: null
+
+    },
+
+
+    {
+        round: 22,
+
+        name: "Qatar Grand Prix",
+
+        shortName: "Qatar",
+
+        date: "27 - 29 Nov",
+
+        location:
+            "Lusail International Circuit",
+
+        image: "images/qatar.avif",
+
+        status: "UPCOMING",
+
+        totalLaps: null,
+
+        podium: null,
+
+        fastestLap: null
+
+    },
+
+
+    {
+        round: 23,
+
+        name: "Abu Dhabi Grand Prix",
+
+        shortName: "Abu Dhabi",
+
+        date: "04 - 06 Dec",
+
+        location: "Yas Marina Circuit",
+
+        image: "images/abu-dhabi.avif",
+
+        status: "UPCOMING",
+
+        totalLaps: null,
+
+        podium: null,
+
+        fastestLap: null
+
+    }
+
 ];
+
 
 /* =====================================================
    DOM ELEMENTS
 ===================================================== */
 
-const raceTrack = document.getElementById("raceTrack");
+const raceTrack =
+    document.getElementById("raceTrack");
 
-const scrollLeftButton = document.getElementById("scrollLeft");
+const scrollLeftButton =
+    document.getElementById("scrollLeft");
 
-const scrollRightButton = document.getElementById("scrollRight");
+const scrollRightButton =
+    document.getElementById("scrollRight");
 
-const emptyState = document.getElementById("emptyState");
+const emptyState =
+    document.getElementById("emptyState");
 
-const raceView = document.getElementById("raceView");
+const raceView =
+    document.getElementById("raceView");
 
-const trackName = document.getElementById("trackName");
+const trackName =
+    document.getElementById("trackName");
 
-const trackLocation = document.getElementById("trackLocation");
+const trackLocation =
+    document.getElementById("trackLocation");
 
-const trackImage = document.getElementById("trackImage");
+const trackImage =
+    document.getElementById("trackImage");
 
-const trackShortName = document.getElementById("trackShortName");
+const trackShortName =
+    document.getElementById("trackShortName");
 
-const roundNumber = document.getElementById("roundNumber");
+const roundNumber =
+    document.getElementById("roundNumber");
 
-const raceDate = document.getElementById("raceDate");
+const raceDate =
+    document.getElementById("raceDate");
 
-const raceStatus = document.getElementById("raceStatus");
+const raceStatus =
+    document.getElementById("raceStatus");
 
-const raceStatusLabel = document.getElementById("raceStatusLabel");
+const raceStatusLabel =
+    document.getElementById(
+        "raceStatusLabel"
+    );
 
-const podium = document.getElementById("podium");
+const podium =
+    document.getElementById("podium");
 
-const fastestLapTable = document.getElementById("fastestLapTable");
+const fastestLapCard =
+    document.getElementById(
+        "fastestLapCard"
+    );
+
+
+/* =====================================================
+   DRIVER IMAGES
+===================================================== */
+
+const driverImages = {
+
+    "George Russell":
+        "images/drivers/george-russell.png",
+
+    "Kimi Antonelli":
+        "images/drivers/kimi-antonelli.png",
+
+    "Charles Leclerc":
+        "images/drivers/charles-leclerc.png",
+
+    "Lewis Hamilton":
+        "images/drivers/lewis-hamilton.png",
+
+    "Max Verstappen":
+        "images/drivers/max-verstappen.png",
+
+    "Lando Norris":
+        "images/drivers/lando-norris.png",
+
+    "Oscar Piastri":
+        "images/drivers/oscar-piastri.png",
+
+    "Isack Hadjar":
+        "images/drivers/isack-hadjar.png"
+
+};
+
 
 /* =====================================================
    BUILD CALENDAR
 ===================================================== */
 
 function buildRaceSelector() {
-  races.forEach((race, index) => {
-    const button = document.createElement("button");
 
-    button.type = "button";
+    races.forEach(
+        (race, index) => {
 
-    button.className = "race-button";
+            const button =
+                document.createElement(
+                    "button"
+                );
 
-    if (race.status === "UPCOMING") {
-      button.classList.add("upcoming");
-    } else {
-      button.classList.add("completed");
-    }
 
-    button.dataset.index = index;
+            button.type = "button";
 
-    button.innerHTML = `
 
-            <span class="race-number">
-                ${String(race.round).padStart(2, "0")}
-            </span>
+            button.className =
+                "race-button";
 
-            <span class="race-name">
-                ${race.shortName}
-            </span>
 
-            <span class="race-state"></span>
+            if (
+                race.status ===
+                "UPCOMING"
+            ) {
 
-        `;
+                button.classList.add(
+                    "upcoming"
+                );
 
-    button.addEventListener("click", () => selectRace(index));
+            } else {
 
-    raceTrack.appendChild(button);
-  });
+                button.classList.add(
+                    "completed"
+                );
+
+            }
+
+
+            button.dataset.index =
+                index;
+
+
+            button.innerHTML = `
+
+                <span class="race-number">
+                    ${String(race.round)
+                        .padStart(2, "0")}
+                </span>
+
+                <span class="race-name">
+                    ${race.shortName}
+                </span>
+
+                <span class="race-state"></span>
+
+            `;
+
+
+            button.addEventListener(
+                "click",
+                () => selectRace(index)
+            );
+
+
+            raceTrack.appendChild(
+                button
+            );
+
+        }
+    );
+
 }
+
 
 /* =====================================================
    SELECT RACE
 ===================================================== */
 
 function selectRace(index) {
-  const race = races[index];
 
-  if (!race) {
-    return;
-  }
+    const race =
+        races[index];
 
-  /* ---------------------------------------------
-       Activate selected race
+
+    if (!race) {
+
+        return;
+
+    }
+
+
+    /* ---------------------------------------------
+       Active race
     --------------------------------------------- */
 
-  document.querySelectorAll(".race-button").forEach((button) => {
-    button.classList.remove("active");
-  });
+    document
+        .querySelectorAll(
+            ".race-button"
+        )
+        .forEach(
+            button => {
 
-  const selectedButton = document.querySelector(
-    `.race-button[data-index="${index}"]`,
-  );
+                button.classList.remove(
+                    "active"
+                );
 
-  if (selectedButton) {
-    selectedButton.classList.add("active");
+            }
+        );
 
-    selectedButton.scrollIntoView({
-      behavior: "smooth",
 
-      block: "nearest",
+    const selectedButton =
+        document.querySelector(
+            `.race-button[data-index="${index}"]`
+        );
 
-      inline: "center",
-    });
-  }
 
-  /* ---------------------------------------------
-       IMPORTANT:
-       Remove initial screen completely.
+    if (selectedButton) {
+
+        selectedButton.classList.add(
+            "active"
+        );
+
+
+        selectedButton.scrollIntoView({
+
+            behavior: "smooth",
+
+            block: "nearest",
+
+            inline: "center"
+
+        });
+
+    }
+
+
+    /* ---------------------------------------------
+       Remove initial screen
     --------------------------------------------- */
 
-  emptyState.hidden = true;
+    emptyState.hidden = true;
 
-  /*
-       The race view is now the only content
-       below the selector.
-    */
+    raceView.hidden = false;
 
-  raceView.hidden = false;
 
-  /* ---------------------------------------------
-       HERO DATA
+    /* ---------------------------------------------
+       Hero
     --------------------------------------------- */
 
-  trackName.textContent = race.name;
+    trackName.textContent =
+        race.name;
 
-  trackLocation.textContent = race.location;
 
-  trackShortName.textContent = race.shortName.toUpperCase();
+    trackLocation.textContent =
+        race.location;
 
-  roundNumber.textContent = race.round;
 
-  raceDate.textContent = race.date;
+    trackShortName.textContent =
+        race.shortName.toUpperCase();
 
-  raceStatus.textContent = race.status;
 
-  raceStatusLabel.textContent = race.status;
+    roundNumber.textContent =
+        race.round;
 
-  raceStatus.classList.toggle("upcoming-status", race.status === "UPCOMING");
 
-  /* ---------------------------------------------
-       IMAGE
+    raceDate.textContent =
+        race.date;
+
+
+    raceStatus.textContent =
+        race.status;
+
+
+    raceStatusLabel.textContent =
+        race.status;
+
+
+    raceStatus.classList.toggle(
+
+        "upcoming-status",
+
+        race.status === "UPCOMING"
+
+    );
+
+
+    /* ---------------------------------------------
+       Track image
     --------------------------------------------- */
 
-  trackImage.style.opacity = "0";
+    trackImage.style.opacity = "0";
 
-  trackImage.onload = () => {
-    trackImage.style.opacity = "1";
-  };
 
-  trackImage.src = race.image;
+    trackImage.onload =
+        () => {
 
-  trackImage.alt = `${race.name} circuit`;
+            trackImage.style.opacity =
+                "1";
 
-  /* ---------------------------------------------
-       PODIUM
+        };
+
+
+    trackImage.src =
+        race.image;
+
+
+    trackImage.alt =
+        `${race.name} circuit`;
+
+
+    /* ---------------------------------------------
+       Podium
     --------------------------------------------- */
 
-  renderPodium(race);
+    renderPodium(race);
 
-  /* ---------------------------------------------
-       FASTEST LAP
+
+    /* ---------------------------------------------
+       Fastest lap
     --------------------------------------------- */
 
-  renderFastestLap(race);
+    renderFastestLap(race);
 
-  /*
-       If the user has already scrolled down,
-       return them to the selected race view.
 
-       The calendar itself stays at the top.
-    */
+    /* ---------------------------------------------
+       Return to selected race
+       when necessary
+    --------------------------------------------- */
 
-  if (
-    window.scrollY >
-    document.querySelector(".race-navigation").offsetHeight + 100
-  ) {
-    raceView.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  }
+    if (
+
+        window.scrollY >
+
+        document
+            .querySelector(
+                ".race-navigation"
+            )
+            .offsetHeight +
+
+        100
+
+    ) {
+
+        raceView.scrollIntoView({
+
+            behavior: "smooth",
+
+            block: "start"
+
+        });
+
+    }
+
 }
+
 
 /* =====================================================
    RENDER PODIUM
 ===================================================== */
 
 function renderPodium(race) {
-  /* ---------------------------------------------
-       UPCOMING RACE
+
+
+    /* ---------------------------------------------
+       Future race
     --------------------------------------------- */
 
-  if (!race.podium) {
-    podium.innerHTML = `
+    if (!race.podium) {
 
-            ${createEmptyPodiumCard(2, "second")}
+        podium.innerHTML = `
 
-            ${createEmptyPodiumCard(1, "first")}
+            ${createEmptyPodiumCard(
+                2,
+                "second"
+            )}
 
-            ${createEmptyPodiumCard(3, "third")}
+            ${createEmptyPodiumCard(
+                1,
+                "first"
+            )}
+
+            ${createEmptyPodiumCard(
+                3,
+                "third"
+            )}
 
         `;
 
-    return;
-  }
+        return;
 
-  /* ---------------------------------------------
-       COMPLETED RACE
+    }
+
+
+    /* ---------------------------------------------
+       Completed race
     --------------------------------------------- */
 
-  const first = race.podium.find((driver) => driver.position === 1);
+    const first =
+        race.podium.find(
+            driver =>
+                driver.position === 1
+        );
 
-  const second = race.podium.find((driver) => driver.position === 2);
 
-  const third = race.podium.find((driver) => driver.position === 3);
+    const second =
+        race.podium.find(
+            driver =>
+                driver.position === 2
+        );
 
-  /*
-       Keep visual order:
+
+    const third =
+        race.podium.find(
+            driver =>
+                driver.position === 3
+        );
+
+
+    /*
+       Visual order:
 
        2nd
        1st
        3rd
     */
 
-  podium.innerHTML = `
+    podium.innerHTML = `
 
         ${createPodiumCard(second)}
 
@@ -1151,19 +1486,50 @@ function renderPodium(race) {
         ${createPodiumCard(third)}
 
     `;
+
 }
 
+
 /* =====================================================
-   PODIUM CARD
+   CREATE PODIUM CARD
 ===================================================== */
 
 function createPodiumCard(driver) {
-  return `
+
+    const driverImage =
+        driverImages[
+            driver.driver
+        ];
+
+
+    return `
 
         <div class="
             podium-card
-            ${driver.position === 1 ? "first" : ""}
+            ${driver.position === 1
+                ? "first"
+                : ""}
         ">
+
+
+            ${
+                driverImage
+                    ? `
+                        <img
+                            class="driver-image"
+                            src="${driverImage}"
+                            alt="${driver.driver}"
+                            loading="lazy"
+                            draggable="false"
+                        >
+
+                        <div
+                            class="driver-image-fade"
+                        ></div>
+                    `
+                    : ""
+            }
+
 
             <div class="position">
                 ${driver.position}
@@ -1194,23 +1560,31 @@ function createPodiumCard(driver) {
                 ${driver.class}
             "></div>
 
+
         </div>
 
     `;
+
 }
+
 
 /* =====================================================
    EMPTY PODIUM CARD
 ===================================================== */
 
-function createEmptyPodiumCard(position, extraClass) {
-  return `
+function createEmptyPodiumCard(
+    position,
+    extraClass
+) {
+
+    return `
 
         <div class="
             podium-card
             ${extraClass}
             upcoming-card
         ">
+
 
             <div class="position">
                 ${position}
@@ -1224,7 +1598,9 @@ function createEmptyPodiumCard(position, extraClass) {
                 </span>
 
 
-                <h3 class="upcoming-driver">
+                <h3
+                    class="upcoming-driver"
+                >
                     —
                 </h3>
 
@@ -1238,116 +1614,220 @@ function createEmptyPodiumCard(position, extraClass) {
 
             <div class="team-color"></div>
 
+
         </div>
 
     `;
+
 }
+
 
 /* =====================================================
    FASTEST LAP
 ===================================================== */
 
 function renderFastestLap(race) {
-  /*
-       FUTURE RACE
-    */
 
-  if (!race.fastestLap) {
-    fastestLapTable.innerHTML = `
+    /* ---------------------------------------------
+       Future race
+    --------------------------------------------- */
 
-            <tr>
+    if (!race.fastestLap) {
 
-                <td class="driver">
+        fastestLapCard.classList.add("empty");
+
+        fastestLapCard.innerHTML = `
+
+            <div class="fastest-lap-main">
+
+                <span class="fastest-lap-label">
+                    FASTEST LAP
+                </span>
+
+                <div class="fastest-lap-time">
                     —
-                </td>
+                </div>
 
-                <td>
+                <div class="fastest-lap-driver">
                     —
-                </td>
+                </div>
 
-                <td>
+                <div class="fastest-lap-team">
                     —
-                </td>
+                </div>
 
-                <td class="lap-time">
+            </div>
+
+
+            <div class="fastest-lap-visual">
+
+                <div class="fastest-lap-visual-placeholder">
                     —
-                </td>
+                </div>
 
-            </tr>
+                <div class="fastest-lap-stats">
+
+                    <div>
+                        <span>LAP</span>
+                        <strong>—</strong>
+                    </div>
+
+                    <div>
+                        <span>TOTAL LAPS</span>
+                        <strong>—</strong>
+                    </div>
+
+                </div>
+
+            </div>
 
         `;
 
-    return;
-  }
+        return;
 
-  /*
-       COMPLETED RACE
-    */
+    }
 
-  const lap = race.fastestLap;
 
-  fastestLapTable.innerHTML = `
+    /* ---------------------------------------------
+       Completed race
+    --------------------------------------------- */
 
-        <tr>
+    fastestLapCard.classList.remove("empty");
 
-            <td class="driver">
-                ${lap.driver}
-            </td>
+    const lap = race.fastestLap;
 
-            <td>
-                ${lap.team}
-            </td>
+    const driverImage =
+        driverImages[lap.driver];
 
-            <td>
-                ${lap.lap}
-            </td>
 
-            <td class="lap-time">
+    fastestLapCard.innerHTML = `
+
+        <div class="fastest-lap-main">
+
+            <span class="fastest-lap-label">
+                FASTEST LAP
+            </span>
+
+            <div class="fastest-lap-time">
                 ${lap.time}
-            </td>
+            </div>
 
-        </tr>
+            <div class="fastest-lap-driver">
+                ${lap.driver}
+            </div>
+
+            <div class="fastest-lap-team">
+                ${lap.team}
+            </div>
+
+        </div>
+
+
+        <div class="fastest-lap-visual">
+
+            ${driverImage ? `
+                <img
+                    class="fastest-lap-driver-image"
+                    src="${driverImage}"
+                    alt="${lap.driver}"
+                    loading="lazy"
+                    draggable="false"
+                >
+                <div class="fastest-lap-image-fade"></div>
+            ` : ""}
+
+
+            <div class="fastest-lap-stats">
+
+                <div>
+                    <span>LAP</span>
+                    <strong>${lap.lap}</strong>
+                </div>
+
+                <div>
+                    <span>TOTAL LAPS</span>
+                    <strong>${race.totalLaps ?? "—"}</strong>
+                </div>
+
+            </div>
+
+        </div>
 
     `;
+
 }
+
 
 /* =====================================================
    CALENDAR ARROWS
 ===================================================== */
 
-scrollLeftButton.addEventListener("click", () => {
-  raceTrack.scrollBy({
-    left: -500,
+scrollLeftButton.addEventListener(
+    "click",
+    () => {
 
-    behavior: "smooth",
-  });
-});
+        raceTrack.scrollBy({
 
-scrollRightButton.addEventListener("click", () => {
-  raceTrack.scrollBy({
-    left: 500,
+            left: -500,
 
-    behavior: "smooth",
-  });
-});
+            behavior: "smooth"
+
+        });
+
+    }
+);
+
+
+scrollRightButton.addEventListener(
+    "click",
+    () => {
+
+        raceTrack.scrollBy({
+
+            left: 500,
+
+            behavior: "smooth"
+
+        });
+
+    }
+);
+
 
 /* =====================================================
    MOUSE WHEEL CALENDAR SCROLL
 ===================================================== */
 
 raceTrack.addEventListener(
-  "wheel",
-  (event) => {
-    if (Math.abs(event.deltaY) > Math.abs(event.deltaX)) {
-      event.preventDefault();
 
-      raceTrack.scrollLeft += event.deltaY;
+    "wheel",
+
+    event => {
+
+        if (
+
+            Math.abs(event.deltaY) >
+
+            Math.abs(event.deltaX)
+
+        ) {
+
+            event.preventDefault();
+
+
+            raceTrack.scrollLeft +=
+                event.deltaY;
+
+        }
+
+    },
+
+    {
+        passive: false
     }
-  },
-  {
-    passive: false,
-  },
+
 );
+
 
 /* =====================================================
    DRAG CALENDAR
@@ -1359,31 +1839,76 @@ let startX = 0;
 
 let startingScrollLeft = 0;
 
-raceTrack.addEventListener("mousedown", (event) => {
-  isDragging = true;
 
-  raceTrack.classList.add("dragging");
+raceTrack.addEventListener(
 
-  startX = event.pageX;
+    "mousedown",
 
-  startingScrollLeft = raceTrack.scrollLeft;
-});
+    event => {
 
-window.addEventListener("mouseup", () => {
-  isDragging = false;
+        isDragging = true;
 
-  raceTrack.classList.remove("dragging");
-});
 
-raceTrack.addEventListener("mousemove", (event) => {
-  if (!isDragging) {
-    return;
-  }
+        raceTrack.classList.add(
+            "dragging"
+        );
 
-  const distance = event.pageX - startX;
 
-  raceTrack.scrollLeft = startingScrollLeft - distance;
-});
+        startX =
+            event.pageX;
+
+
+        startingScrollLeft =
+            raceTrack.scrollLeft;
+
+    }
+
+);
+
+
+window.addEventListener(
+
+    "mouseup",
+
+    () => {
+
+        isDragging = false;
+
+
+        raceTrack.classList.remove(
+            "dragging"
+        );
+
+    }
+
+);
+
+
+raceTrack.addEventListener(
+
+    "mousemove",
+
+    event => {
+
+        if (!isDragging) {
+
+            return;
+
+        }
+
+
+        const distance =
+            event.pageX - startX;
+
+
+        raceTrack.scrollLeft =
+            startingScrollLeft -
+            distance;
+
+    }
+
+);
+
 
 /* =====================================================
    INITIALIZE
@@ -1391,89 +1916,190 @@ raceTrack.addEventListener("mousemove", (event) => {
 
 buildRaceSelector();
 
+
 /*
     Deliberately do NOT call selectRace().
 
-    The user must choose a race first.
+    User chooses the race first.
 */
+
 
 /* =====================================================
    LASER CURSOR
 ===================================================== */
 
-const laserCursor = document.querySelector(".laser-cursor");
+const laserCursor =
+    document.querySelector(
+        ".laser-cursor"
+    );
 
-const laserTrail = document.querySelector(".laser-trail");
+
+const laserTrail =
+    document.querySelector(
+        ".laser-trail"
+    );
+
 
 let mouseX = 0;
+
 let mouseY = 0;
 
 let trailX = 0;
+
 let trailY = 0;
+
 
 /* ---------------------------------------------
    Track mouse
 --------------------------------------------- */
 
-document.addEventListener("mousemove", (event) => {
-  mouseX = event.clientX;
-  mouseY = event.clientY;
+document.addEventListener(
 
-  /*
-            Main laser dot follows immediately.
-        */
+    "mousemove",
 
-  laserCursor.style.left = `${mouseX}px`;
+    event => {
 
-  laserCursor.style.top = `${mouseY}px`;
-});
+        mouseX =
+            event.clientX;
+
+        mouseY =
+            event.clientY;
+
+
+        laserCursor.style.left =
+            `${mouseX}px`;
+
+
+        laserCursor.style.top =
+            `${mouseY}px`;
+
+    }
+
+);
+
 
 /* ---------------------------------------------
    Animate laser trail
 --------------------------------------------- */
 
 function animateLaserTrail() {
-  trailX += (mouseX - trailX) * 0.18;
 
-  trailY += (mouseY - trailY) * 0.18;
+    trailX +=
+        (mouseX - trailX) *
+        0.18;
 
-  const dx = mouseX - trailX;
 
-  const dy = mouseY - trailY;
+    trailY +=
+        (mouseY - trailY) *
+        0.18;
 
-  const distance = Math.sqrt(dx * dx + dy * dy);
 
-  const angle = Math.atan2(dy, dx) * (180 / Math.PI);
+    const dx =
+        mouseX - trailX;
 
-  laserTrail.style.left = `${trailX}px`;
 
-  laserTrail.style.top = `${trailY}px`;
+    const dy =
+        mouseY - trailY;
 
-  laserTrail.style.transform = `translate(-100%, -50%)
-         rotate(${angle}deg)
-         scaleX(${Math.min(1.5, Math.max(0.15, distance / 30))})`;
 
-  requestAnimationFrame(animateLaserTrail);
+    const distance =
+        Math.sqrt(
+            dx * dx +
+            dy * dy
+        );
+
+
+    const angle =
+        Math.atan2(
+            dy,
+            dx
+        ) *
+        (180 / Math.PI);
+
+
+    laserTrail.style.left =
+        `${trailX}px`;
+
+
+    laserTrail.style.top =
+        `${trailY}px`;
+
+
+    laserTrail.style.transform =
+        `
+            translate(-100%, -50%)
+            rotate(${angle}deg)
+            scaleX(
+                ${Math.min(
+                    1.5,
+                    Math.max(
+                        0.15,
+                        distance / 30
+                    )
+                )}
+            )
+        `;
+
+
+    requestAnimationFrame(
+        animateLaserTrail
+    );
+
 }
 
+
 animateLaserTrail();
+
 
 /* =====================================================
    LASER HOVER STATE
 ===================================================== */
 
-document.addEventListener("mouseover", (event) => {
-  const interactive = event.target.closest("button, a");
+document.addEventListener(
 
-  if (interactive) {
-    document.body.classList.add("cursor-hover");
-  }
-});
+    "mouseover",
 
-document.addEventListener("mouseout", (event) => {
-  const interactive = event.target.closest("button, a");
+    event => {
 
-  if (interactive) {
-    document.body.classList.remove("cursor-hover");
-  }
-});
+        const interactive =
+            event.target.closest(
+                "button, a"
+            );
+
+
+        if (interactive) {
+
+            document.body.classList.add(
+                "cursor-hover"
+            );
+
+        }
+
+    }
+
+);
+
+
+document.addEventListener(
+
+    "mouseout",
+
+    event => {
+
+        const interactive =
+            event.target.closest(
+                "button, a"
+            );
+
+
+        if (interactive) {
+
+            document.body.classList.remove(
+                "cursor-hover"
+            );
+
+        }
+
+    }
+
+);
