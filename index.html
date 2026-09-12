@@ -28,6 +28,22 @@
 
 <body>
 
+    <!-- INITIAL ASSET LOADER -->
+    <div class="page-loader" id="pageLoader" aria-label="Loading F1 dashboard">
+        <div class="loader-content">
+            <div class="loader-logo">F1<span style="color: #fff; padding-left: 10px;">26</span></div>
+            <div class="loader-label" id="loaderStatus">INITIALIZING RACE DATA</div>
+            <div class="loader-progress" aria-hidden="true">
+                <div class="loader-progress-bar" id="loaderProgressBar"></div>
+            </div>
+            <div class="loader-meta">
+                <span>LOADING ASSETS</span>
+                <span id="loaderPercentage">0%</span>
+            </div>
+        </div>
+    </div>
+
+
     <!-- Custom desktop laser cursor -->
     <div class="laser-cursor"></div>
     <div class="laser-trail"></div>

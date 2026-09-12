@@ -1150,6 +1150,85 @@ const driverImages = {
 
 
 /* =====================================================
+   INITIAL IMAGE PRELOADER
+===================================================== */
+
+const pageLoader = document.getElementById("pageLoader");
+const loaderProgressBar = document.getElementById("loaderProgressBar");
+const loaderPercentage = document.getElementById("loaderPercentage");
+const loaderStatus = document.getElementById("loaderStatus");
+
+/*
+   Preload the assets needed for the first useful interaction.
+   Completed-race circuits and all driver images are ready before
+   the dashboard is revealed. Future-race circuits load when selected.
+*/
+const initialImages = [
+    ...races
+        .filter(race => race.status === "COMPLETED")
+        .map(race => race.image),
+    ...Object.values(driverImages)
+];
+
+const uniqueInitialImages = [...new Set(initialImages)];
+
+function preloadImage(src) {
+    return new Promise(resolve => {
+        const image = new Image();
+        let finished = false;
+
+        const finish = () => {
+            if (finished) return;
+            finished = true;
+            resolve();
+        };
+
+        image.onload = finish;
+        image.onerror = finish;
+        image.src = src;
+
+        if (image.decode) {
+            image.decode().then(finish).catch(() => {});
+        }
+    });
+}
+
+async function preloadInitialImages() {
+    const total = uniqueInitialImages.length;
+
+    if (!total) {
+        pageLoader.classList.add("hidden");
+        return;
+    }
+
+    let loaded = 0;
+
+    const updateProgress = () => {
+        loaded++;
+        const percentage = Math.round((loaded / total) * 100);
+        loaderProgressBar.style.width = `${percentage}%`;
+        loaderPercentage.textContent = `${percentage}%`;
+    };
+
+    await Promise.all(
+        uniqueInitialImages.map(src =>
+            preloadImage(src).then(updateProgress)
+        )
+    );
+
+    loaderProgressBar.style.width = "100%";
+    loaderPercentage.textContent = "100%";
+    loaderStatus.textContent = "RACE DATA READY";
+
+    await new Promise(resolve => setTimeout(resolve, 220));
+
+    pageLoader.classList.add("hidden");
+
+    setTimeout(() => pageLoader.remove(), 650);
+}
+
+
+/* =====================================================
    BUILD CALENDAR
 ===================================================== */
 
@@ -1915,6 +1994,9 @@ raceTrack.addEventListener(
 ===================================================== */
 
 buildRaceSelector();
+
+/* Preload the important visual assets behind the opening loader. */
+preloadInitialImages();
 
 
 /*
