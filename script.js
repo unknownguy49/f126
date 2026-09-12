@@ -1583,12 +1583,13 @@ function createPodiumCard(driver) {
 
     return `
 
-        <div class="
-            podium-card
-            ${driver.position === 1
-                ? "first"
-                : ""}
-        ">
+        <div
+            class="
+                podium-card
+                ${driver.position === 1 ? "first" : ""}
+            "
+            data-position="${driver.position}"
+        >
 
 
             ${

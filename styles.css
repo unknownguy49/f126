@@ -1470,6 +1470,22 @@ footer > span {
 
     }
 
+    .podium {
+        grid-template-columns: 1fr;
+    }
+
+    .podium-card[data-position="1"] {
+        order: 1;
+    }
+
+    .podium-card[data-position="2"] {
+        order: 2;
+    }
+
+    .podium-card[data-position="3"] {
+        order: 3;
+    }
+
 }
 
 
