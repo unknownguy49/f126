@@ -1,0 +1,1061 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+
+  background: #080808;
+
+  color: #f5f5f5;
+
+  font-family: "Inter", Arial, sans-serif;
+}
+
+/* =====================================================
+   VARIABLES
+===================================================== */
+
+:root {
+  --red: #e10600;
+
+  --black: #080808;
+
+  --surface: #111111;
+
+  --surface-2: #151515;
+
+  --border: #272727;
+
+  --white: #f5f5f5;
+
+  --muted: #858585;
+
+  --dim: #4c4c4c;
+
+  --mercedes: #00a19c;
+
+  --ferrari: #e10600;
+
+  --redbull: #3671c6;
+
+  --mclaren: #ff8700;
+}
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+  height: 76px;
+
+  padding: 0 6%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  border-bottom: 1px solid var(--border);
+
+  background: #080808;
+}
+
+.brand {
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+}
+
+.f1-logo {
+  color: var(--red);
+
+  font-size: 29px;
+
+  font-weight: 900;
+
+  font-style: italic;
+
+  letter-spacing: -4px;
+
+  transform: skew(-10deg);
+}
+
+.brand-divider {
+  width: 1px;
+
+  height: 17px;
+
+  background: #303030;
+}
+
+.brand-title {
+  color: #8a8a8a;
+
+  font-size: 9px;
+
+  font-weight: 600;
+
+  letter-spacing: 2px;
+}
+
+.season {
+  color: #777;
+
+  font-size: 9px;
+
+  letter-spacing: 2px;
+}
+
+/* =====================================================
+   MAIN
+===================================================== */
+
+main {
+  width: 88%;
+
+  max-width: 1400px;
+
+  margin: auto;
+}
+
+/* =====================================================
+   RACE NAVIGATION
+===================================================== */
+
+.race-navigation {
+  padding: 35px 0 28px;
+
+  border-bottom: 1px solid var(--border);
+}
+
+.navigation-header {
+  display: flex;
+
+  align-items: end;
+
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+}
+
+.navigation-header h2 {
+  font-size: 25px;
+
+  letter-spacing: -1px;
+}
+
+.navigation-controls {
+  display: flex;
+
+  gap: 6px;
+}
+
+.nav-button {
+  width: 38px;
+
+  height: 34px;
+
+  border: 1px solid #303030;
+
+  background: #111111;
+
+  color: #888888;
+
+  font-size: 15px;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.nav-button:hover {
+  border-color: #555555;
+
+  background: #171717;
+
+  color: #ffffff;
+}
+
+/* =====================================================
+   RACE TRACK
+===================================================== */
+
+.race-track-wrapper {
+  width: 100%;
+
+  overflow: hidden;
+}
+
+.race-track {
+  display: flex;
+
+  gap: 7px;
+
+  overflow-x: auto;
+
+  overflow-y: hidden;
+
+  scroll-behavior: smooth;
+
+  scrollbar-width: none;
+
+  cursor: none !important;
+
+  padding-bottom: 2px;
+}
+
+.race-track::-webkit-scrollbar {
+  display: none;
+}
+
+.race-track.dragging {
+  cursor: none !important;
+
+  scroll-behavior: auto;
+}
+
+/* =====================================================
+   RACE BUTTON
+===================================================== */
+
+.race-button {
+  flex: 0 0 auto;
+
+  width: 116px;
+
+  height: 54px;
+
+  padding: 0 15px;
+
+  position: relative;
+
+  border: 1px solid #282828;
+
+  background: #101010;
+
+  color: #777777;
+
+  text-align: left;
+
+  font-family: inherit;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.race-button:hover {
+  background: #171717;
+
+  border-color: #444444;
+
+  color: #ffffff;
+}
+
+.race-button.active {
+  background: var(--red);
+
+  border-color: var(--red);
+
+  color: #ffffff;
+}
+
+.race-button.upcoming {
+  opacity: 0.8;
+}
+
+.race-number {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #555555;
+
+  font-size: 8px;
+
+  letter-spacing: 1.5px;
+}
+
+.race-button.active .race-number {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.race-name {
+  display: block;
+
+  white-space: nowrap;
+
+  font-size: 10px;
+
+  font-weight: 600;
+}
+
+.race-state {
+  position: absolute;
+
+  top: 7px;
+
+  right: 7px;
+
+  width: 5px;
+
+  height: 5px;
+
+  border-radius: 50%;
+
+  background: #3b3b3b;
+}
+
+.race-button.active .race-state {
+  background: #ffffff;
+}
+
+/* =====================================================
+   EMPTY STATE
+===================================================== */
+
+.empty-state {
+  min-height: 620px;
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+}
+
+.empty-line {
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 1px;
+
+  height: 100%;
+
+  background: #151515;
+}
+
+.empty-content {
+  margin-left: 40px;
+}
+
+.empty-state h1 {
+  margin-bottom: 25px;
+
+  font-size: clamp(55px, 7vw, 95px);
+
+  line-height: 0.88;
+
+  letter-spacing: -6px;
+}
+
+.empty-state p {
+  max-width: 350px;
+
+  color: #666666;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+/*
+    This is important.
+
+    Once a race is selected, the entire empty-state
+    is hidden. It does not occupy any layout space.
+*/
+
+.empty-state[hidden] {
+  display: none;
+}
+
+/* =====================================================
+   EYEBROW
+===================================================== */
+
+.eyebrow {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: var(--red);
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 2.5px;
+}
+
+/* =====================================================
+   RACE VIEW
+===================================================== */
+
+.race-view[hidden] {
+  display: none;
+}
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+  min-height: 470px;
+
+  display: grid;
+
+  grid-template-columns: 0.82fr 1.18fr;
+
+  border-bottom: 1px solid var(--border);
+}
+
+.hero-content {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding-right: 50px;
+}
+
+.hero h1 {
+  max-width: 600px;
+
+  margin-bottom: 20px;
+
+  font-size: clamp(48px, 5vw, 76px);
+
+  line-height: 0.91;
+
+  letter-spacing: -5px;
+}
+
+.hero-content > p {
+  color: #777777;
+
+  font-size: 13px;
+}
+
+.race-meta {
+  display: flex;
+
+  gap: 42px;
+
+  margin-top: 55px;
+}
+
+.race-meta div {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+.race-meta span {
+  color: #555555;
+
+  font-size: 8px;
+
+  letter-spacing: 2px;
+}
+
+.race-meta strong {
+  color: #d4d4d4;
+
+  font-size: 11px;
+}
+
+#raceStatus.upcoming-status {
+  color: var(--red);
+}
+
+/* =====================================================
+   TRACK IMAGE
+===================================================== */
+
+.track-image {
+  min-height: 470px;
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  overflow: hidden;
+
+  background: #080808;
+}
+
+.track-image img {
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: contain;
+
+  object-position: center;
+
+  opacity: 1;
+
+  transition: opacity 0.25s ease;
+}
+
+/*
+    No gradient.
+    No blur.
+    No dark overlay.
+    No edge fade.
+*/
+
+.track-image-label {
+  position: absolute;
+
+  left: 18px;
+
+  bottom: 18px;
+
+  padding: 7px 10px;
+
+  background: rgba(8, 8, 8, 0.9);
+
+  border-left: 2px solid var(--red);
+}
+
+.track-image-label span {
+  color: #dddddd;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: 3px;
+}
+
+/* =====================================================
+   SECTIONS
+===================================================== */
+
+.section {
+  padding: 75px 0;
+
+  border-bottom: 1px solid var(--border);
+}
+
+.section-heading {
+  margin-bottom: 30px;
+}
+
+.section h2 {
+  font-size: 28px;
+
+  letter-spacing: -1.5px;
+}
+
+/* =====================================================
+   PODIUM
+===================================================== */
+
+.podium {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 8px;
+
+  align-items: end;
+}
+
+.podium-card {
+  min-height: 175px;
+
+  position: relative;
+
+  padding: 25px;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+
+  overflow: hidden;
+}
+
+.podium-card.first {
+  min-height: 205px;
+  border: 1px solid var(--border);
+}
+
+.position {
+  position: absolute;
+
+  top: 7px;
+
+  right: 18px;
+
+  color: #292929;
+
+  font-size: 50px;
+
+  font-weight: 900;
+
+  line-height: 1;
+}
+
+.driver-info {
+  position: absolute;
+
+  bottom: 24px;
+
+  left: 25px;
+}
+
+.driver-number {
+  color: #555555;
+
+  font-family: monospace;
+
+  font-size: 9px;
+}
+
+.driver-info h3 {
+  margin: 5px 0;
+
+  color: #eeeeee;
+
+  font-size: 16px;
+
+  letter-spacing: -0.4px;
+}
+
+.driver-info p {
+  color: #666666;
+
+  font-size: 10px;
+}
+
+.team-color {
+  position: absolute;
+
+  bottom: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 3px;
+
+  background: #333333;
+}
+
+.team-color.mercedes {
+  background: var(--mercedes);
+}
+
+.team-color.ferrari {
+  background: var(--ferrari);
+}
+
+.team-color.redbull {
+  background: var(--redbull);
+}
+
+.team-color.mclaren {
+  background: var(--mclaren);
+}
+
+/* =====================================================
+   FASTEST LAP TABLE
+===================================================== */
+
+.table-container {
+  width: 100%;
+
+  overflow-x: auto;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+}
+
+table {
+  width: 100%;
+
+  min-width: 600px;
+
+  border-collapse: collapse;
+}
+
+thead {
+  background: #0d0d0d;
+}
+
+th {
+  padding: 16px 20px;
+
+  color: #555555;
+
+  text-align: left;
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+td {
+  padding: 20px;
+
+  border-top: 1px solid var(--border);
+
+  color: #777777;
+
+  font-size: 11px;
+}
+
+td.driver {
+  color: #eeeeee;
+
+  font-weight: 600;
+}
+
+td.lap-time {
+  color: #eeeeee;
+
+  font-family: monospace;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+/* =====================================================
+   FUTURE RACE EMPTY VALUES
+===================================================== */
+
+.upcoming-card {
+  border-top-color: #242424 !important;
+}
+
+.upcoming-driver {
+  color: #444444 !important;
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+  width: 88%;
+
+  max-width: 1400px;
+
+  height: 100px;
+
+  margin: auto;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.footer-logo {
+  color: var(--red);
+
+  font-size: 24px;
+
+  font-weight: 900;
+
+  font-style: italic;
+}
+
+footer p {
+  color: #898989;
+
+  font-size: 9px;
+
+  letter-spacing: 1px;
+}
+
+footer span {
+  color: #898989;
+
+  font-size: 9px;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+  main {
+    width: 90%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content {
+    min-height: 330px;
+
+    padding: 60px 0 40px;
+  }
+
+  .track-image {
+    min-height: 350px;
+  }
+
+  .podium {
+    grid-template-columns: 1fr;
+  }
+
+  .podium-card,
+  .podium-card.first {
+    min-height: 160px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 0 5%;
+  }
+
+  .season {
+    display: none;
+  }
+
+  .brand-divider,
+  .brand-title {
+    display: none;
+  }
+
+  main {
+    width: 90%;
+  }
+
+  .race-navigation {
+    padding-top: 25px;
+  }
+
+  .navigation-header {
+    align-items: flex-start;
+
+    gap: 15px;
+  }
+
+  .navigation-header h2 {
+    font-size: 22px;
+  }
+
+  .race-button {
+    width: 105px;
+  }
+
+  .empty-state {
+    min-height: 500px;
+  }
+
+  .empty-state h1 {
+    font-size: 58px;
+
+    letter-spacing: -4px;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+
+    letter-spacing: -4px;
+  }
+
+  .race-meta {
+    gap: 25px;
+
+    flex-wrap: wrap;
+
+    margin-top: 40px;
+  }
+
+  .track-image {
+    min-height: 270px;
+  }
+
+  .section {
+    padding: 55px 0;
+  }
+
+  footer {
+    width: 90%;
+  }
+}
+
+/* =====================================================
+   RED F1 SCROLLBAR
+===================================================== */
+
+/* Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #e10600 #080808;
+}
+
+/* Chrome / Edge / Safari */
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080808;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e10600;
+
+  border-radius: 0;
+
+  box-shadow:
+    0 0 4px rgba(225, 6, 0, 0.9),
+    0 0 10px rgba(225, 6, 0, 0.55),
+    0 0 20px rgba(225, 6, 0, 0.25);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff1a14;
+
+  box-shadow:
+    0 0 5px rgba(225, 6, 0, 1),
+    0 0 12px rgba(225, 6, 0, 0.8),
+    0 0 25px rgba(225, 6, 0, 0.4);
+}
+
+/* Remove scrollbar buttons */
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* =====================================================
+   RED LASER CURSOR
+===================================================== */
+
+html,
+body,
+button,
+a {
+  cursor: none;
+}
+
+.laser-cursor {
+  position: fixed;
+
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #ff1a14;
+
+  box-shadow:
+    0 0 4px #e10600,
+    0 0 10px #e10600,
+    0 0 20px rgba(225, 6, 0, 0.8);
+
+  pointer-events: none;
+
+  z-index: 99999;
+
+  transform: translate(-50%, -50%);
+}
+
+/*
+    A very thin horizontal laser beam
+    extending behind the pointer.
+*/
+
+.laser-trail {
+  position: fixed;
+
+  width: 55px;
+  height: 1px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(225, 6, 0, 0.2),
+    rgba(225, 6, 0, 0.8)
+  );
+
+  box-shadow: 0 0 5px rgba(225, 6, 0, 0.7);
+
+  pointer-events: none;
+
+  z-index: 99998;
+
+  transform-origin: right center;
+}
+
+/*
+    Small crosshair lines make it look
+    more like a telemetry targeting cursor.
+*/
+
+.laser-cursor::before,
+.laser-cursor::after {
+  content: "";
+
+  position: absolute;
+
+  background: rgba(225, 6, 0, 0.7);
+}
+
+/* Horizontal crosshair */
+
+.laser-cursor::before {
+  width: 18px;
+  height: 1px;
+
+  left: -5px;
+  top: 3px;
+}
+
+/* Vertical crosshair */
+
+.laser-cursor::after {
+  width: 1px;
+  height: 18px;
+
+  left: 3px;
+  top: -5px;
+}
