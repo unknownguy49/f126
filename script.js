@@ -814,33 +814,58 @@ const races = [
     },
 
 
+    {
+        round: 14,
+        name: "Spanish Grand Prix",
+        shortName: "Spain",
+        date: "13 Sep",
+        location: "Madrid",
+        image: "images/spain.avif",
+        status: "COMPLETED",
+        totalLaps: 57,
+
+        podium: [
+            {
+                position: 1,
+                number: 12,
+                driver: "Kimi Antonelli",
+                team: "Mercedes",
+                class: "mercedes"
+            },
+            {
+                position: 2,
+                number: 3,
+                driver: "Max Verstappen",
+                team: "Red Bull Racing",
+                class: "redbull"
+            },
+            {
+                position: 3,
+                number: 1,
+                driver: "Lando Norris",
+                team: "McLaren",
+                class: "mclaren"
+            }
+        ],
+
+        fastestLap: {
+
+            driver: "George Russell",
+
+            number: 63,
+
+            team: "Mercedes",
+
+            lap: 49,
+
+            time: "1:35.587"
+
+        }
+    },
+
     /* =================================================
        FUTURE RACES
     ================================================= */
-
-    {
-        round: 14,
-
-        name: "Spanish Grand Prix",
-
-        shortName: "Spain",
-
-        date: "11 - 13 Sep",
-
-        location: "Madring, Madrid",
-
-        image: "images/spain.avif",
-
-        status: "UPCOMING",
-
-        totalLaps: null,
-
-        podium: null,
-
-        fastestLap: null
-
-    },
-
 
     {
         round: 15,

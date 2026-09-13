@@ -1136,7 +1136,7 @@ main {
 
     object-fit: cover;
 
-    object-position: center 35%;
+    object-position: center 15%;
 
     opacity: 0.95;
 
@@ -1401,7 +1401,7 @@ footer {
 
 footer p {
 
-    color: #444444;
+    color: #7d7d7d;
 
     font-size: 9px;
 
@@ -1412,7 +1412,7 @@ footer p {
 
 footer > span {
 
-    color: #333333;
+    color: #7d7d7d;
 
     font-size: 9px;
 
