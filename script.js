@@ -863,33 +863,53 @@ const races = [
         }
     },
 
+    {
+        "round": 15,
+        "name": "Azerbaijan Grand Prix",
+        "shortName": "Azerbaijan",
+        "date": "26 Sep",
+        "location": "Baku",
+        "image": "images/azerbaijan.avif",
+        "status": "COMPLETED",
+        "totalLaps": 51,
+
+        "podium": [
+            {
+                "position": 1,
+                "number": 63,
+                "driver": "George Russell",
+                "team": "Mercedes",
+                "class": "mercedes"
+            },
+            {
+                "position": 2,
+                "number": 3,
+                "driver": "Max Verstappen",
+                "team": "Red Bull Racing",
+                "class": "redbull"
+            },
+            {
+                "position": 3,
+                "number": 6,
+                "driver": "Isack Hadjar",
+                "team": "Red Bull Racing",
+                "class": "redbull"
+            }
+        ],
+
+        "fastestLap": {
+            "driver": "George Russell",
+            "number": 63,
+            "team": "Mercedes",
+            "lap": 49,
+            "time": "1:44.916"
+        }
+    },
+
+
     /* =================================================
        FUTURE RACES
     ================================================= */
-
-    {
-        round: 15,
-
-        name: "Azerbaijan Grand Prix",
-
-        shortName: "Azerbaijan",
-
-        date: "24 - 26 Sep",
-
-        location: "Baku City Circuit",
-
-        image: "images/azerbaijan.avif",
-
-        status: "UPCOMING",
-
-        totalLaps: null,
-
-        podium: null,
-
-        fastestLap: null
-
-    },
-
 
     {
         round: 16,
